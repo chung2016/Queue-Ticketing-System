@@ -51,7 +51,7 @@
             } catch (error) {
                 console.error(error)
             } finally {
-                setTimeout(getCounterServing, 5000);
+                setTimeout(getCounterServing, 1000);
             }
         }
         getCounterServing();

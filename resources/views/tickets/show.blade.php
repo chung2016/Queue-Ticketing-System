@@ -85,7 +85,7 @@
             } catch (error) {
                 console.error(error);
             } finally {
-                setTimeout(getCurrentTicket, 2000);
+                setTimeout(getCurrentTicket, 1000);
             }
         }
 
@@ -108,7 +108,7 @@
             document.getElementById('current-ticket').innerHTML = data[counterId].tickets ?
                 data[counterId].tickets :
                 '-';
-            setTimeout(getCounterServing, 5000);
+            setTimeout(getCounterServing, 1000);
         }
         getCounterServing();
     </script>

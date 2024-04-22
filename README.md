@@ -17,6 +17,10 @@ The project developed with
 - [ ] Send SMS message to customer using SMS for alert ticket is processing
 - [ ] Agent see the tickets and counter overview (serving time, closed rate, ) with dashboard and chart
 
+## Demo
+
+![demo](/screenshot/demo.gif)
+
 ### Prequisites
 
 - Git
