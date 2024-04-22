@@ -1,11 +1,21 @@
 # Queue Ticketing System
 
+This system is responsible for agent serving customer by queuing
+
+The project developed with
+- Laravel 11
+- PHP 8.2
+- MySQL
+- Tailwind
+
 # Features
 
 - [x] Agent login admin panel
 - [x] Agent create, update, delete and batch create Customers
 - [x] Customer get and cancel ticket
 - [x] Agent pick, cancel, close ticket
+- [ ] Send SMS message to customer using SMS for alert ticket is processing
+- [ ] Agent see the tickets and counter overview (serving time, closed rate, ) with dashboard and chart
 
 ### Prequisites
 
