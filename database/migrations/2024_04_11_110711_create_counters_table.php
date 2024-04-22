@@ -16,6 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('name')->unique();
             $table->integer('next_ticket_number')->default(1);
+            $table->string('color');
         });
     }
 

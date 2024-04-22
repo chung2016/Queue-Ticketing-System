@@ -11,12 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tickets', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-            $table->integer('number');
-            $table->unsignedBigInteger('counter_id');
-            $table->enum('status', ['open', 'closed', 'canceled'])->default('open');
+        Schema::table('tickets', function (Blueprint $table) {
+            $table->enum('status', ['open', 'closed', 'canceled', 'processing'])->default('open')->change();
         });
     }
 
@@ -25,6 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tickets');
+        Schema::table('tickets', function (Blueprint $table) {
+            $table->enum('status', ['open', 'closed', 'canceled'])->default('open')->change();
+        });
     }
 };
