@@ -13,6 +13,26 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+        <style>
+            .queue-ticket {
+                border: 1px solid #000;
+                padding: 0.5rem;
+                margin-bottom: 1rem;
+                justify-content: space-between;
+                border-radius: 0.5rem;
+                align-items: center;
+                display: flex;
+            }
+
+            .picking {
+                background: lightgreen;
+            }
+
+            .hidden-ticket-btn {
+                display: none;
+            }
+        </style>
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
@@ -32,5 +52,6 @@
                 {{ $slot }}
             </main>
         </div>
+        @yield('js')
     </body>
 </html>

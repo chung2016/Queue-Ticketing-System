@@ -18,11 +18,13 @@ class CounterSeeder extends Seeder
                 'name' => 'A',
                 'created_at' => now(),
                 'updated_at' => now(),
+                'color' => 'linear-gradient(#e54243, #e99830)',
             ],
             [
                 'name' => 'B',
                 'created_at' => now(),
                 'updated_at' => now(),
+                'color' => 'linear-gradient(#27b79b, #24eb17);',
             ]
         ]);
     }
